@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "nature",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,17 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-icons": "^4.10.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.8.9",
+    "react-simple-typewriter": "^5.0.1",
+    "react-slick": "^0.29.0",
+    "react-spring": "^9.7.2",
+    "react-typing-effect": "^2.0.5",
+    "sass": "^1.64.2",
+    "styled-components": "^6.0.7",
+    "swiper": "^10.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

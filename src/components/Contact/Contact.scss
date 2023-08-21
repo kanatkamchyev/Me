@@ -1,0 +1,45 @@
+.Contact{
+    background-color: #191919;
+
+    &__inside{
+        width: 100%;
+        height: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        a.button-two{
+            background-color: #f9004d;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+        }
+
+        a:hover{
+            background-color: transparent;
+            border: 2px solid #f9004d;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media(max-width:500px){
+    .Contact__inside p{
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
