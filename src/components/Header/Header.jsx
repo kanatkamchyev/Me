@@ -88,7 +88,7 @@ export const Header = () => {
                             <li><a href="#" onClick={handleScrollToContact}>Contact</a></li>
                         </ul>
                         <a href="" className='btn'>Subscribe</a>
-                        <div className="Heder__burger" onClick={() => setBurger(!burger)}>
+                        <div className={burger ? "Heder__burger active" : "Heder__burger"} onClick={() => setBurger(!burger)}>
                            {
                             burger?
                             <IoClose/>

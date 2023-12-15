@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ya from '../../assets/images/ about.png';
 import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring';
-import Typing from 'react-typing-effect';
 import './About.scss';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
@@ -52,7 +51,7 @@ export const About = () => {
                                     <Cursor cursorStyle='|'/>
                                 </span>
                             </p>
-                            <button type='button'>Let's Talk</button>
+                            <button type='button'><a href="https://t.me/kamchyev">Let's Talk</a> </button>
                         </div>
                     </div>
                 </div>

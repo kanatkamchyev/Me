@@ -2,6 +2,9 @@ import React from 'react'
 import { BsInstagram, BsWhatsapp, BsTelegram } from 'react-icons/bs'
 import { CgMail } from 'react-icons/cg'
 import { BiLogoJavascript, BiLogoPython, BiLogoReact, BiLogoTypescript, BiLogoWordpress } from 'react-icons/bi'
+import { TbBrandNextjs } from "react-icons/tb";
+import { IoLogoNodejs } from "react-icons/io5";
+
 
 import './Footer.scss'
 
@@ -10,9 +13,11 @@ export const Footer = () => {
     <div className='Footer' id='contact'>
       <div className="container">
         <div className="Footer__inside">
-          <p>Kanat Kamchyev</p>
+          <p>My Skills</p>
           <ul>
             <li><a href="https://ru.legacy.reactjs.org/"><BiLogoReact /> React </a> </li>
+            <li><a href="https://nextjs.org/"><TbBrandNextjs /> Next JS</a> </li>
+            <li><a href="https://nodejs.org/en"><IoLogoNodejs /> Node JS</a> </li>
             <li><a href="https://learn.javascript.ru/"><BiLogoTypescript /> TypeScript</a> </li>
             <li><a href="https://www.typescriptlang.org/"><BiLogoJavascript /> JavaScript</a> </li>
             <li><a href="https://ru.wordpress.org/"><BiLogoWordpress /> Wordpress</a> </li>

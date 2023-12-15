@@ -61,6 +61,8 @@
     &__inside {
 
         nav {
+            position: relative;
+            z-index: 99;
             display: flex;
             justify-content: space-between;
             padding-top: 35px;
@@ -118,8 +120,9 @@
                 animation-delay: 1s;
             }
 
-            a:hover {
-                transform: scale(1.2);
+            a.btn:hover{
+                background-color: #000000;
+                border: 2px solid #f9004d;
             }
 
             @keyframes slideInLeft {
@@ -224,6 +227,7 @@
                 transform: translateX(-100%);
                 animation: slideInLeft 1s ease-in-out forwards;
                 animation-delay: 3s;
+                cursor: pointer;
             }
         }
     }
@@ -361,10 +365,17 @@
         display: inline-grid;
     }
 
+    .Header .Header__inside .Heder__burger.active {
+        position: absolute;
+        right: 20px;
+    }
+
     .Header .Header__inside .Heder__burger {
         display: inline;
         color: white;
         cursor: pointer;
+
+      
 
         svg {
             width: 45px;
