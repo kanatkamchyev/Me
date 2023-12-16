@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ya from '../../assets/images/ about.png';
 import styled from 'styled-components';
-import { useSpring, animated } from 'react-spring';
+import { animated } from 'react-spring';
 import './About.scss';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
