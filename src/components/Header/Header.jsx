@@ -87,7 +87,7 @@ export const Header = () => {
                             <li><a href="#" onClick={handleScrollToSkills}>Skills</a></li>
                             <li><a href="#" onClick={handleScrollToContact}>Contact</a></li>
                         </ul>
-                        <a href="" className='btn'>Subscribe</a>
+                        <a href="https://www.linkedin.com/in/%D0%BA%D0%B0%D0%BD%D0%B0%D1%82-%D0%BA%D0%B0%D0%BC%D1%87%D1%8B%D0%B5%D0%B2-a08792268/  ]" className='btn'>Subscribe</a>
                         <div className={burger ? "Heder__burger active" : "Heder__burger"} onClick={() => setBurger(!burger)}>
                             {
                                 burger ?
