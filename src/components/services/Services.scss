@@ -133,4 +133,10 @@
             width: 90%;
         }
     }
+
+    @media (max-width: 360px) {
+        .Services__card {
+            padding: 15px 15px;
+        }
+    }
 }

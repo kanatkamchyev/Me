@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const Servic = ({ item }) => {
     const [activeCard, setActiveCard] = useState(false)
 
-    const substredDescribe = item.describe.substr(0, 150)
+    const substredDescribe = item.describe.substr(0, 105)
     return (
         <div className={activeCard ? "Services__card active" : "Services__card"}>
             {

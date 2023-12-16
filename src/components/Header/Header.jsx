@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import man from '../../assets/images/kaku.png'
+import man from '../../assets/images/kanat.JPG'
 import mee from '../../assets/images/mee.png'
-import {RiMenu3Fill} from 'react-icons/ri'
-import {IoClose} from 'react-icons/io5'
+import { RiMenu3Fill } from 'react-icons/ri'
+import { IoClose } from 'react-icons/io5'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import './Header.scss'
 
@@ -12,63 +12,63 @@ export const Header = () => {
 
     useEffect(() => {
         if (burger) {
-          document.body.classList.add('active-body-overflow');
+            document.body.classList.add('active-body-overflow');
         } else {
-          document.body.classList.remove('active-body-overflow');
+            document.body.classList.remove('active-body-overflow');
         }
-      }, [burger]);
+    }, [burger]);
 
     const [text] = useTypewriter({
-        words:['Web Developer.', 'Web Developer.', 'Web Developer.'],
-        loop:{},
+        words: ['Web Developer.', 'Web Developer.', 'Web Developer.'],
+        loop: {},
         typeSpeed: 120,
         deleteSpeed: 80
     })
 
     const handleScrollToHome = (event) => {
         event.preventDefault();
-        const templatesComponent = document.getElementById('Content'); 
+        const templatesComponent = document.getElementById('Content');
         if (templatesComponent) {
             templatesComponent.scrollIntoView({ behavior: 'smooth' });
-            setBurger(false) ;
+            setBurger(false);
         }
     };
 
     const handleScrollToTemplates = (event) => {
         event.preventDefault();
-        const templatesComponent = document.getElementById('about'); 
+        const templatesComponent = document.getElementById('about');
         if (templatesComponent) {
             templatesComponent.scrollIntoView({ behavior: 'smooth' });
-            setBurger(false) ;
+            setBurger(false);
         }
     };
 
     const handleScrollToServices = (event) => {
         event.preventDefault();
-        const templatesComponent = document.getElementById('services'); 
+        const templatesComponent = document.getElementById('services');
         if (templatesComponent) {
-            templatesComponent.scrollIntoView({ behavior: 'smooth' }); 
-            setBurger(false) ;
+            templatesComponent.scrollIntoView({ behavior: 'smooth' });
+            setBurger(false);
 
         }
     };
 
     const handleScrollToSkills = (event) => {
         event.preventDefault();
-        const templatesComponent = document.getElementById('skills'); 
+        const templatesComponent = document.getElementById('skills');
         if (templatesComponent) {
             templatesComponent.scrollIntoView({ behavior: 'smooth' });
-            setBurger(false) ;
+            setBurger(false);
 
         }
     };
 
     const handleScrollToContact = (event) => {
         event.preventDefault();
-        const templatesComponent = document.getElementById('contact'); 
+        const templatesComponent = document.getElementById('contact');
         if (templatesComponent) {
-            templatesComponent.scrollIntoView({ behavior: 'smooth' }); 
-            setBurger(false) ;
+            templatesComponent.scrollIntoView({ behavior: 'smooth' });
+            setBurger(false);
         }
     };
 
@@ -89,12 +89,12 @@ export const Header = () => {
                         </ul>
                         <a href="" className='btn'>Subscribe</a>
                         <div className={burger ? "Heder__burger active" : "Heder__burger"} onClick={() => setBurger(!burger)}>
-                           {
-                            burger?
-                            <IoClose/>
-                            :
-                            <RiMenu3Fill/>
-                           }
+                            {
+                                burger ?
+                                    <IoClose />
+                                    :
+                                    <RiMenu3Fill />
+                            }
                         </div>
                     </nav>
                 </div>
@@ -102,7 +102,7 @@ export const Header = () => {
                     <div className="left">
                         <h4>Hello, my name is</h4>
                         <h1>Kamchyev <span>Kanat</span> </h1>
-                        <h3>I'm a <span>{text}</span> <span className='cursor'><Cursor cursorStyle='|'/></span> </h3>
+                        <h3>I'm a <span>{text}</span> <span className='cursor'><Cursor cursorStyle='|' /></span> </h3>
                         <div className="newslatter">
                             <form action="">
                                 <input type="email" name='email' id='email' placeholder='Enter Your Email' />
@@ -112,16 +112,16 @@ export const Header = () => {
                     </div>
                     <div className='Content__me' id='Content'>
                         <div className="blur">
-                            
+
                         </div>
                         <img src={mee} alt="" />
                     </div>
                     <div className="bac">
                         <img src={man} alt="" />
                     </div>
-                    <div className="bac2">
+                    {/* <div className="bac2">
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

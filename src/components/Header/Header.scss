@@ -4,8 +4,7 @@
 
 .Header {
     height: 100vh;
-
-
+    
     &__burger {
         display: none;
     }
@@ -148,9 +147,6 @@
         align-items: center;
         padding: 100px 0;
 
-        .left {
-            margin-top: 50px;
-        }
 
         h1 {
             color: white;
@@ -248,13 +244,13 @@
 
     .bac {
         position: absolute;
-        right: 5%;
-        bottom: 0;
+        right: -5%;
+        top: 0;
         animation: opac 3s ease-in-out forwards;
-
+        z-index: -2;
         img {
-            width: 430px;
-            height: 700px;
+            width:930px;
+            // height: 700px;
         }
     }
 
@@ -275,7 +271,9 @@
 
 
 
-@media(max-width:980px) {
+
+
+@media(max-width:985px) {
     .Header .Content__me {
         width: 330px;
         height: 350px;
@@ -333,6 +331,7 @@
     .Header .Content__inside {
         padding: 15px 0;
         display: flex;
+        gap: 55px;
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
